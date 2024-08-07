@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+     
+h2{font-family: "Sofia", sans-serif;}
+
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+       
+       
+        </style>
+        <script src="Script.js"defer></script>
+</head>
+<body>
+    <div class="header"style="background-color:#E9FF97;">
+        <h1 style="color:rgba(255, 99, 71, 0.87);" >PARKS & FARMS</h1>
+        <p style="color:rgba(255, 99, 71, 0.87);" >"Let the fun begin!"</p>
+      </div>
+      <div class="navbar">
+        <a href="Parks.html">PARKS</a>
+        <a href="Farms.html">FARMS</a>
+        <a href="Beaches.html">BEACHES</a>
+        <a href="Main.html" class="right">HOME</a>
+      </div>
+
+      <div class="row">
+        <div class="side">
+          <h2>Member Login</h2>
+          <form action="/action_page.php" target="_self">
+            <label for="fname">User name</label>
+            <input type="text" id="uname" name="uname" size="25" required/><br>
+            <br>
+            <label for="password">Password
+              <input type="password" name="password" id="password" size="25" />
+            </label>
+            <br><br>
+            <input type="submit" value="Submit">
+           
+          </form>
+       
+        <!-- form with regex validation -->
+          <h3>Become a member- Sign Up</h3>
+          <form action="/action_page.php" target="_self">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" size="50" pattern="^[a-zA-Z]+" title="Please start username with a letter from a-z "
+            required/><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" size="50" pattern="^[a-zA-Z]+" title="Please start username with a letter from a-z "
+            required/><br><br>
+            <label for="Telephone">Telephone No:</label>
+            <input type="tel" id="Telephone" name="Telephone"  min="7" maxlength="10" pattern="\d{10}"> <br><br>
+            <label for="email">Email Id:</label>
+            <input type="email" id="email" name="email" size="50" placeholder="Email with regEx"
+            title="please start with letter and follow name@mail.com" pattern="^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$" required/> <br><br>
+            <br>
+          <label for="password">Enter Password 
+            
+              <input type="password" name="password" id="password" size="25" />
+            </label> <br> <br>
+            <label for="password">Confirm Password
+              <input type="password" name="password" id="password" size="25" />
+            </label>
+            <br> <br>
+            <fieldset>
+              <legend>Gender</legend>
+              <label>Male
+                 <input type="radio" name="Male" id="Male" />
+              </label>
+              <label>Female
+                 <input type="radio" name="Female" id="Female" />
+              </label><br> <br>
+              <label>Date of Birth
+                <input type="date" name="DOB" id="DOB" />
+             </label><br> <br>
+
+         <label for="Membership">Choose a Membership term:</label>
+<select id="Annual" name="Annual">
+    <option value="Quaterly">Quaterly</option>
+  <option value="Monthly">Monthly</option>
+<option value="Weekly">Weekly</option>
+  <option value="Day">Day</option>
+</select>
+<br>
+<br>
+<input type="submit" value="Submit">
+</form>
+</div>
+
+         
+      <div class="main">
+        <h2 id="Greetings"  style="color:#059212;" style="background-color:#9BEC00;"></h2>
+
+ 
+          <h3>MOTHER NATURE</h3>
+          <div style="text-align:center"> 
+            <button onclick="playPause()">Play/Pause</button> 
+            <button onclick="makeBig()">Big</button>
+            <button onclick="makeSmall()">Small</button>
+            <button onclick="makeNormal()">Normal</button>
+            <br><br>
+            <video id="video1" width="420" autoplay muted>
+                <source src="ParkVideo.mp4" type="video/mp4">
+              <source src="mov_bbb.ogg" type="video/ogg">
+              Your browser does not support HTML video.
+            </video>
+          </div> 
+   
+    
+          <p>Famous nature quotes you’ll want to share...</p>
+          <p>It’s easy to forget that we’re part of nature. We live in an insulated home and wake up with the blinds down. We get ready for the day with a dozen products that come out of tubes and boxes. We breathe fresh air for less than a minute on our way from the door to the car, and again on our way from the car into the office.
+
+            So much of our existence is about shielding us from the natural world. Still, we’re organisms on this green Earth. We’re creatures who feed off its bounties. We’re humbled by its power with every storm. Our very existence is based on Mother Nature’s whims.
+            
+            Countless nature quotes have gone down in the history books as we try to understand nature and our place in it. History’s great thinkers, leaders, artists, and personalities have each had a different spin on the subject, and the resulting treasure of nature quotes is now yours to peruse..</p>
+          <br>
+          <h2>Mother Nature quotes of admiration and respect.</h2>
+          <h5>Mother Nature can be as formidable as she can be nurturing, and these handpicked quotes capture her complex essence.</h5>
+        
+          <p>Mother Nature, also called Mother Earth, is the personification of the natural world. Everything about her—the water, the air, the flora, and fauna—creates more life, which is where the idea of “mothering” began. Religions and philosophies from everywhere have looked at nature as a maternal “giver,” but also a mother to be revered.</p>
+         
+        </div>
+      </div>
+      <div class="footer">
+        <h2>"Nature is the closest place to Heaven on Earth"</h2>
+        
+      </div>
+</body>
+</html>
